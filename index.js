@@ -186,7 +186,7 @@ function startEnemySpawnTimeout() {
     if (!running) return;
     setInterval(() => {
         createEnemy();
-    }, 1000);
+    }, 100);
 }
 
 function startAnimation() {
