@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+.scoreContainer {
+    position: fixed;
+    z-index: 1;
+    font-size: 20px;
+    top: 2px;
+    left: 5px;
+    color: white;
+    background: transparent;
+
+}
+
 #canvas {
-    background: black;
+    background: white;
     border: none;
     position: absolute;
     height: 100%;
     width: 100%;
 }
+
 
