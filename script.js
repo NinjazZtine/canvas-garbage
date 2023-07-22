@@ -339,7 +339,6 @@ function main() {
                 break;
         }
         ammoUi.style.width = Math.max(10, (ammo/30) * 100) + "%";
-        ammoUi.innerText = ammo;
     }
 
     function updateEnergy() {
