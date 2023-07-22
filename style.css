@@ -19,6 +19,7 @@
     visibility: visible;
 }
 
+
 .uiStart h1 {
     font-family: Sans-Serif;
     margin-top: 25px;
@@ -52,16 +53,10 @@
     visibility: hidden;
 }
 
-#deathMessage {
-    margin: 10px 0;
-    font-size: 60px;
-    color: white;
-}
-
 #points {
     width: 100%;
     font-family: Sans-Serif;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 55px;
     color: white;
 }
@@ -88,21 +83,50 @@
     font-size: 20px;
     top: 2px;
     color: white;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    width: 180px;
     padding: 0 10px;
     background: transparent;
+    transition: 0.5s;
     visibility: hidden;
 }
 
 #score {
-    color: lightgreen;
+    font-size: 25px;
+    color: #00ff00;
 }
 
-#blast {
-    color: red;
+.ammo, .energy {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    font-size: 15px;
 }
+
+#ammo, #energy{
+    width: 150px;
+    height: 15px;
+    margin: 1px;
+    background: transparent;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+#ammoValue {
+    transition: 0.25s;
+    border-radius: 10px;
+    background: #fff59d;
+    width: 10%;
+    height: 100%;
+}
+
+#energyValue {
+    transition: 0.75s;
+    border-radius: 10px;
+    background: #00ff00;
+    width: 100%;
+    height: 100%;
+}
+
 
 #blastButton {
     z-index: 1;
@@ -111,15 +135,16 @@
     left: 50%;
     transform: translateX(-50%);
     padding-top: 2px;
-    width: 100px;
-    height: 45px;
-    font-size: 30px;
+    width: 140px;
+    height: 60px;
+    font-size: 40px;
     text-align: center;
     background: #00000042;
     backdrop-filter: blur(5px);
     color: white;
     border: solid 1px white;
     border-radius: 10px;
+    transition: 0.1s;
     visibility: hidden;
 }
 
